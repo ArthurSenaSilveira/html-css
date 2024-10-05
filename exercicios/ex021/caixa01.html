@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixa</title>
+    <style>
+        /*
+        quando for simplificar uma caixa coloque sempre os valores em sentido horário (cima, direita, baixo, esquerda)
+        */
+        h1 { /*box-level*/
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            border: 10px solid darkslategray;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            padding: 10px 10px 10px 10px;
+            /*se for todos os tamanhos iguais igual a cima é preciso colocar apenas o primeiro*/
+            padding: 10px;
+            /*se colocar dois valores como 10px e 20px a largura de baixo e de cima serão de 10px e a altura dos lados serão de 20px*/
+            padding: 10px 20px;
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 40px;
+            margin-left: 10px;
+            margin: auto;
+
+            margin: 10px 10px 40px 10px auto;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+            /*coloque sempre na ordem acima*/
+            outline: 5px dashed salmon;
+        }
+        a { /*inline-level*/
+            height: 300px;
+            width: 300px;
+            border-color: red;
+            border-width: 10px;
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplo de caixa inline-level</a>. Vamos ver na prática como tudo isso funciona?</p>
+</body>
+</html>

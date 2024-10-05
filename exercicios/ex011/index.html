@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em hmtl 5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+  <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+  <p>pode não parecer, mas tem mais duas imagens junto com esta uma para cada dispositivo (pequena, média, grande) para fazer isso use a tag &lt;picture&gt; depois coloque a imagem base (pode ser a pequena ou a grande) com a tag &lt;img&gt; e coloque as outras imagens acima dela com a tag &lt;source media&gt; e coloque sempre em ordem crescente ou decrescente
+  <picture>
+    <source media="(max-width: 750px)" srcset="imagens/imagem-p.png" type="image/png">
+    <source media="(max-width: 1050px)" srcset="imagens/imagem-m.png" type="image/png">
+    <img src="imagens/imagem-g.png" alt="imagem flexível">
+  </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender  a reproduzir áudios em html5</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/bob marley.mp3" type="audio/mpeg">
+        <source src="midia/bob marley.ogg" type="audio/ogg">
+    </audio>
+    <source src="midia/bob marley.wav" type="audio/wav">
+    <p>Infelismente seu navegador nao consegue reproduzir áudio <a href="midia/bob marley.mp3">clique aqui para fazer o dowload do áudio</a></p>
+    <!--MP# WAV OGG-->
+</body>
+</html>
