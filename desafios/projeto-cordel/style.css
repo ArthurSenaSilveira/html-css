@@ -1,79 +1,70 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
-
-:root {
-    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
-    --fonte2: 'Passion One', cursive;
-    --fonte3: 'Sriracha', cursive;
+body {
+    height: 100vh;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-    font-size: 1em;
-}
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    unicode-bidi: isolate;
-}
 header {
     background-color: black;
     color: white;
     padding-bottom: 10px;
 }
+
 header h1 {
     font-family: var(--fonte2);
     text-align: center;
     font-size: 4em;
     padding-top: 55px;
     margin-bottom: 0px;
+    font-variant: small-caps;
+    padding-top: 50px;
 }
+
 header p {
     text-align: center;
     font-size: 1.5em;
     margin-top: 0px;
+    padding-bottom: 50px;
 }
-header a {
+
+a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
+
+a:hover {
+    text-decoration: underline;
+}
+
 main {
     font-family: var(--fonte3);
 }
+
 section {
-        min-height: 300px;
-        min-width: 300px;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        line-height: 2em;
+        padding-left: 30px;
 }
-section p {
-    padding: 30px 0px 0px 30px;
-    font-size: 3vh;
-}
-#imagemp {
-    background-color: rgba(0, 0, 0, 0.212);
-}
-.imagem1 {
-    background: black url('imagens/background001.jpg');
-    background-size: 100% 100%;
-    position: absolute;
-    min-width: 500px;
-    background-size: right center;
-    background-attachment: fixed;
+
+section.normal {
+    background-color: white;
+    color: black;
 
 }
-.imagem2 {
-    background: black url('imagens/background002.jpg');
-    background-size: 100% 100%;
-    position: absolute;
-    min-width: 500px;
-    background-size: right center;
-    background-attachment: fixed;
 
+section.imagem {
+    background-color: rgb(51, 51, 51);
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
