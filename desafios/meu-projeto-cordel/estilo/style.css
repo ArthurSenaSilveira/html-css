@@ -13,9 +13,11 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: var(--font1);
 }
 
+main {
+    font-family: var(--font1);
+}
 header{
     background-color: black;
     color: white;
@@ -76,4 +78,11 @@ section {
 #img2 {
     background-image: url('../imagens/background002.jpg');
     background-position: right center;
+}
+footer {
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    color: white;
+    text-align: center;
 }
