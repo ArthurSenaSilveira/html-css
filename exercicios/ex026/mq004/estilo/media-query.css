@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+/*Todas as demais medias*/
+
+/*pesquisat po --Typical Device Breakpoints-- para saber o tamanho das telas de todos os dispossitivos que serão necessários:
+pequenas telas: Até 600px
+cell: De 600px Até 768px
+tablet: De 768px Até 992px
+pc: De 992px até 1200
+telas grandes: acima De 1200px
+*/
+
+@media print { /*impressão*/ /*desnecessário*/
+
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body{
+        background-image: url(../imagens/back-print.jpg);
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+
+    main {
+        border: 2px solid black;
+        width: 90vw;
+        text-align: center;
+    }
+
+    main h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after {
+        content: 'Este site foi produzido por @arth_urhe';
+        text-decoration: overline;
+    }
+
+    #cel { display: none; }
+    #tablet {display: none; }
+    #print {display: block; }
+    #pc {display: none; }
+    #tv {display: none; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*Tablet*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #cel { display: none; }
+    #tablet {display: block; }
+    #print {display: none; }
+    #pc {display: none; }
+    #tv {display: none; }
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /*pc*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+
+    }
+    #cel { display: none; }
+    #tablet {display: none; }
+    #print {display: none; }
+    #pc {display: block; }
+    #tv {display: none; }
+    
+}
+
+@media screen and (min-width: 1200px) { /*Telas grandes*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    #cel { display: none; }
+    #tablet {display: none; }
+    #print {display: none; }
+    #pc {display: none; }
+    #tv {display: block; }
+}
