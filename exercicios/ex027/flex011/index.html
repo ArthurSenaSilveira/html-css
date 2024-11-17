@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        
+        div.container {
+            background-color: lightsalmon;
+            display: flex;
+        }
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+        }
+        #a {
+            flex-shrink: 1;
+            flex-grow: 0;
+            
+            flex: 0 1 200px;
+        }
+        #b {
+            flex-shrink: 1;
+            flex-grow: 1;
+
+            flex: 1 1 200px;
+        }
+        #c {
+            flex-shrink: 1;
+            flex-grow: 4;
+
+            flex: 4 1 200px;
+        }
+        #aa {
+            flex-shrink: 0;
+            flex-grow: 1;
+
+            flex: 1 0 200px;
+        }
+        #bb {
+            flex-shrink: 1;
+            flex-grow: 1;
+
+            flex: 1 1 200px;
+        }
+        #cc {
+            flex-shrink: 2;
+            flex-grow: 1;
+
+            flex: 1 2 200px;
+        }
+        #aaa {
+            flex-shrink: 1;
+            flex-grow: 1;
+
+            flex: 1 1 200px;
+        }
+        #bbb {
+            flex-shrink: 1;
+            flex-grow: 1;
+
+            flex: 1 1 200px;
+        }
+        #ccc {
+            flex-shrink: 1;
+            flex-grow: 1;
+
+            flex: 1 1 200px;
+        }
+        /*
+        flex-shrink diz respeito ao encolhimento e o flex-grow diz respeito ao crescimento do item!!!
+        */
+    </style>
+    <div class="container">
+        <div class="item" id="a">A</div>
+        <div class="item" id="b">B</div>
+        <div class="item" id="c">C</div>
+    </div>
+    <div class="container">
+        <div class="item" id="aa">A</div>
+        <div class="item" id="bb">B</div>
+        <div class="item" id="cc">C</div>
+    </div>
+    <div class="container">
+        <div class="item" id="aaa">A</div>
+        <div class="item" id="bbb">B</div>
+        <div class="item" id="ccc">C</div>
+    </div>
+</body>
+</html>
