@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        body {
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            
+        }
+        section {
+            width: 95vw;
+            display: grid;
+            grid: 250px 20px 50px / 1fr 1fr 1fr;
+            align-items: center;
+        }
+        div#img1{
+            grid-column: 1;
+            width: 150px;
+            height: 250px;
+            background: url(../mais-posicionamento/imagens/catchup.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        div#img2 {
+            grid-column: 2 / 3;
+            width: 150px;
+            height: 250px;
+            background: url(../mais-posicionamento/imagens/pudim.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        div#img3 {
+            grid-column: 3;
+            width: 150px;
+            height: 250px;
+            background: url(../mais-posicionamento/imagens/lasanha.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div id="img1"></div>
+        <div id="img2"></div>
+        <div id="img3"></div>
+        <div id="dicas"><p><strong>DICAS</strong></p></div>
+        <div id="doce"><p><strong>DOCE</strong></p></div>
+        <div id="aprenda"><p><strong>APRENDA A FAZER</strong></p></div>
+        
+        <div style="width: 150px;"><p>Aprenda a fazer catchup em casa</p></div>
+        <div style="width: 150px;"><p>Confira receita de minipudim de chocolate</p></div>
+        <div style="width: 150px;"><p>Lasanha leve com berinjela e ricota</p></div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        body {
+            width: 100vw;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+        }
+        section {
+            width: 90vw;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+        div#primeiro-esquerda {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        div#segundo-esquerda {
+            grid-column: 1;
+            grid-row: 2;
+        }
+        div#terceiro-esquerda {
+            grid-column: 1;
+            grid-row: 3;
+        }
+        div#quarto-esquerda {
+            grid-column: 1;
+            grid-row: 4;
+        }
+        div#quinto-esquerda {
+            grid-column: 2;
+            grid-row: 4;
+        }
+        div#primeiro-direita {
+            grid-column: 2;
+            grid-row: 1;
+        }
+        div#segundo-direita {
+            grid-column: 2;
+            grid-row: 2;
+        }
+        div#terceiro-direita {
+            grid-column: 2;
+            grid-row: 3;
+        }
+        div#quarto-direita {
+            grid-column: 2;
+            grid-row: 4;
+        }
+        section#img {
+            grid-column: 0 / 1;
+            grid-row: 4 / 5;
+            display: grid;
+            grid-column: 1fr 1fr;
+            width: 250px;
+            align-self: center;
+        }
+        div.img1 {
+            background: url(../mais-posicionamento/imagens/mulher-no-espelho.jpg);
+            grid-column: 0 / 1;
+            width: 100px;
+        }
+        div.img2 {
+            background: url(../mais-posicionamento/imagens/homem-assustado.jpg);
+            grid-column: 1 / 2;
+            width: 100px;
+        }
+        div.img3 {
+            background: url(../mais-posicionamento/imagens/mulher-tirando-foto.jpg);
+            grid-column: 2 / 3;
+            grid-row: 2;
+        }
+        div.img4 {
+            background: url(../mais-posicionamento/imagens/homem-gordo.jpg);
+        }
+        div.img1, div.img2, div.img3, div.img4 {
+            width: 110px;
+            height: 100px;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="primeiro-esquerda">
+            <p>POLÍTICA</p>
+            <h1><strong>Articulação de partidas cria nova crise, diz Cunha</strong></h1>
+        </div>
+        <div id="segundo-esquerda">
+            <p>REFUGIADOS</p>
+            <h2>Sírios no Brasil podem se tornar alvo de rede de exploração, diz ONG</h2>
+        </div>
+        <div id="terceiro-esquerda">
+            <p>LAVA JATO</p>
+            <h2>Justiça vai julgar habeas corpus que tira Odebrecht da prisão</h2>
+        </div>
+        <section id="img">
+            <div id="quarto-esquerda">
+                <p>2 ANOS DE PRISÃO</p>
+                <div class="img1"></div>
+                <h2>Professora fica grávida de aluno menor de idade</h2>
+            </div>
+            <div id="quinto-esquerda">
+                <p>ARMADO COM FACA</p>
+                <div class="img2"></div>
+                <h2>Homem invade aeroporto para atacar papa</h2>
+            </div>
+        </section>
+        <div id="primeiro-direita">
+            <p>POLÍTICA</p>
+            <h2>Dois deputados estaduais do PSOL-RJ vão para a Rede Sustentabilidade</h2>
+            <ul>
+                <li>Deputado acusado de agressão à ex-mulher é absolvido</li>
+            </ul>
+        </div>
+        
+        <div id="segundo-direita">
+            <p>"PREFEITA OSTENTAÇÃO"</p>
+            <h2>Presa fica em "cela" com ar condicionado</h2>
+            <div class="img3"></div>
+        </div>
+        <div id="terceiro-direita">
+            <p>EDUCAÇÃO</p>
+            <h2>Diretor da UFRR rebate deputado sobre curso para integrantes do MST</h2>
+            <ul>
+                <li>Número de inscritos na Fuvest supera a edição de 2015</li>
+            </ul>
+        </div>
+        <div id="quarto-direita">
+            <p>RECIFE</p>
+            <h2>'Superobeso' perde 145 kg em três meses</h2>
+        <div class="img4"></div>
+        </div>
+    </section>
+</body>
+</html>

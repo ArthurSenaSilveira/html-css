@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0px;
+        }
+        section#grid {
+            display: grid;
+            grid-template-columns: 100px 1fr 100px;
+            grid-template-rows:  100px 1fr 100px;
+            height: 91vh;
+        }
+        div#red {
+            background: red;
+            grid-column: 1 / 2;
+        }
+        div#yellow {
+            background: yellow;
+            grid-column: 3 / 4;
+        }
+        div#green {
+            background: green;
+            grid-column: 1 / 1;
+            grid-row: 3 / 3;
+        }
+        div#blue {
+            background: blue;
+            grid-column: 3 / 3;
+            grid-row: 3 /  3;
+        }
+    </style>
+</head>
+<body>
+    <section id="grid">
+        <div id="red"><p>Esquerda em cima</p></div>
+        <div id="yellow"><p>Direita em cima</p></div>
+        <div id="green"><p>Esquerda em baixo</p></div>
+        <div id="blue">Direita em cima</div>
+    </section>
+</body>
+</html>
